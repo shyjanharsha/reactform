@@ -102,7 +102,7 @@ export default class App extends React.Component {
 		              {errors.FirstName.length > 0 && 
 		                <span className='error'>{errors.FirstName}</span>}
 		            </div>
-		            <div>
+		            <div class = "right">
 		              <input type='text' class= 'input-style' name='lastName' placeholder = 'last name' onChange={this.handleChange} noValidate />
 		              
 		              {errors.lastName.length > 0 && 
@@ -120,7 +120,7 @@ export default class App extends React.Component {
 		              {errors.password.length > 0 && 
 		                <span className='error'>{errors.password}</span>}
 		            </div>
-			        <div>
+			        <div class = "right">
 		              <input type='password' class= 'input-style' name='repeat_password' placeholder = 'repeat_password' onChange={this.handleChange} noValidate />
 		              {errors.repeat_password.length > 0 && 
 		                <span className='error'>{errors.repeat_password}</span>}
