@@ -1,0 +1,48 @@
+h2{
+	text-align: center;
+}
+.form-wrapper{
+	margin-right: 400px;
+    margin-left: 400px;
+}
+.border{
+	/*border-color: black;*/
+	border: 2px solid red;
+}
+.input-style{
+	width: 50%;
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
+	margin-top:10px;
+	margin-bottom: 10px;
+
+}
+.d-flex{
+	display: flex;
+}
+.mb-15{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.vid-style{
+	width: 91%;
+    height: 50px;
+    margin-left: 12px;
+    border-radius: 30px;
+    padding-left: 25px;
+}
+.btn-style{
+	width: 96%;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 30px;
+    color: white;
+    background-color: blue;
+    margin-bottom: 16px;
+}
+.error{
+	color: red;
+}
