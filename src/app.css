@@ -5,9 +5,7 @@ h2{
 	margin-right: 400px;
     margin-left: 400px;
 }
-.border{
-	border: 2px solid red;
-}
+
 .input-style{
     border-radius: 30px;
     width: 100%;
@@ -28,14 +26,14 @@ h2{
 	margin-top: 15px;
 }
 .vid-style{
-	width: 91%;
+	width: 90%;
     height: 50px;
     margin-left: 12px;
     border-radius: 30px;
     padding-left: 25px;
 }
 .btn-style{
-	width: 96%;
+	width: 95%;
     height: 40px;
     margin-left: 20px;
     border-radius: 30px;
@@ -47,6 +45,6 @@ h2{
 	color: red;
 }
 .right{
-	margin-left: 100px
+	margin-left: 100px;
 
 }
