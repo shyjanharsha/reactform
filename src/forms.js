@@ -1,5 +1,4 @@
 import React from 'react';
-import Input from './input'
 const validEmailRegex = RegExp(
   /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 );
@@ -75,6 +74,9 @@ export default class App extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
+    if(this.state.repeat_password != this.state.password){
+    	alert('enter the correct password')
+    }
     if(validateForm(this.state.errors)) {
     	
       console.info('Valid Form')
@@ -95,32 +97,39 @@ export default class App extends React.Component {
           <div class='border'>
 	          <form onSubmit={this.handleSubmit} noValidate>
 	            <div class='d-flex mb-15'>
-	              <input type='text' class= 'input-style' name='FirstName' placeholder = 'first name' onChange={this.handleChange} noValidate />
-	              <input type='text' class= 'input-style' name='lastName' placeholder = 'last name' onChange={this.handleChange} noValidate />
-	              {errors.FirstName.length > 0 && 
-	                <span className='error'>{errors.FirstName}</span>}
-	              {errors.lastName.length > 0 && 
-	                <span className='error'>{errors.lastName}</span>}
-	            </div>
+		            <div>
+		              <input type='text' class= 'input-style' name='FirstName' placeholder = 'first name' onChange={this.handleChange} noValidate />
+		              {errors.FirstName.length > 0 && 
+		                <span className='error'>{errors.FirstName}</span>}
+		            </div>
+		            <div>
+		              <input type='text' class= 'input-style' name='lastName' placeholder = 'last name' onChange={this.handleChange} noValidate />
+		              
+		              {errors.lastName.length > 0 && 
+		                <span className='error'>{errors.lastName}</span>}
+		            </div>
+		        </div>
 	            <div class='mb-15' id = 'm-style'>
 	              <input type='email' class= 'vid-style' name='email' placeholder = 'email' onChange={this.handleChange} noValidate />
 	              {errors.email.length > 0 && 
 	                <span className='error'>{errors.email}</span>}
 	            </div>
 	            <div class='d-flex mb-15'>
-	              <input type='password' class= 'input-style' name='password' placeholder = 'password' onChange={this.handleChange} noValidate />
-	              <input type='password' class= 'input-style' name='repeat_password' placeholder = 'repeat_password' onChange={this.handleChange} noValidate />
-	              {errors.password.length > 0 && 
-	                <span className='error'>{errors.password}</span>}
-	              {errors.repeat_password.length > 0 && 
-	                <span className='error'>{errors.repeat_password}</span>}
+		            <div>
+		              <input type='password' class= 'input-style' name='password' placeholder = 'password' onChange={this.handleChange} noValidate />
+		              {errors.password.length > 0 && 
+		                <span className='error'>{errors.password}</span>}
+		            </div>
+			        <div>
+		              <input type='password' class= 'input-style' name='repeat_password' placeholder = 'repeat_password' onChange={this.handleChange} noValidate />
+		              {errors.repeat_password.length > 0 && 
+		                <span className='error'>{errors.repeat_password}</span>}
+		            </div>
 	            </div>
 	            <div className='submit'>
 	              <button class= 'btn-style'>Register Account</button>
 	            </div>
-	            <Input name = 'shyjan' placeholder = 'FirstName' />
-	            <Input placeholder = 'lastName'/>
-	            <Input placeholder = 'addname'/>
+
 	          </form>
           </div>
         </div>
