@@ -78,13 +78,12 @@ export default class App extends React.Component {
     const {FirstName,lastName,email,password,repeat_password} = this.state;
     if(this.state.repeat_password != this.state.password){
     	alert('enter the correct password')
+    }else if(this.state.repeat_password == this.state.password){
+    	alert('valid form')
     }
     if(!FirstName || !lastName || !email || !password || !repeat_password){
     	alert("input cannot to be empty")
-    }else{
-    	alert("valid form")
     }
-    
   }
 
   render() {
