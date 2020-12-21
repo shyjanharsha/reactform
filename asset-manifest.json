@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/reactform/static/css/main.8643e8da.chunk.css",
-    "main.js": "/reactform/static/js/main.35b205b2.chunk.js",
-    "main.js.map": "/reactform/static/js/main.35b205b2.chunk.js.map",
+    "main.css": "/reactform/static/css/main.7ebe0133.chunk.css",
+    "main.js": "/reactform/static/js/main.21b513b9.chunk.js",
+    "main.js.map": "/reactform/static/js/main.21b513b9.chunk.js.map",
     "runtime-main.js": "/reactform/static/js/runtime-main.9a20bcca.js",
     "runtime-main.js.map": "/reactform/static/js/runtime-main.9a20bcca.js.map",
     "static/js/2.23a5a755.chunk.js": "/reactform/static/js/2.23a5a755.chunk.js",
     "static/js/2.23a5a755.chunk.js.map": "/reactform/static/js/2.23a5a755.chunk.js.map",
     "index.html": "/reactform/index.html",
-    "static/css/main.8643e8da.chunk.css.map": "/reactform/static/css/main.8643e8da.chunk.css.map",
+    "static/css/main.7ebe0133.chunk.css.map": "/reactform/static/css/main.7ebe0133.chunk.css.map",
     "static/js/2.23a5a755.chunk.js.LICENSE.txt": "/reactform/static/js/2.23a5a755.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9a20bcca.js",
     "static/js/2.23a5a755.chunk.js",
-    "static/css/main.8643e8da.chunk.css",
-    "static/js/main.35b205b2.chunk.js"
+    "static/css/main.7ebe0133.chunk.css",
+    "static/js/main.21b513b9.chunk.js"
   ]
 }
