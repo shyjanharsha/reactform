@@ -80,7 +80,7 @@ export default class App extends React.Component {
     	alert('enter the correct password')
     }
     if(!FirstName || !lastName || !email || !password || !repeat_password){
-    	alert("fill")
+    	alert("input cannot to be empty")
     }else{
     	alert("valid form")
     }
