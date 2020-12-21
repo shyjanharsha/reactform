@@ -25,6 +25,7 @@ export default class App extends React.Component {
         password: '',
         repeat_password:'',
       }
+
     };
   }
 
@@ -68,24 +69,22 @@ export default class App extends React.Component {
         break;
     }
 
-    this.setState({errors, [name]: value}, () => console.log(this.state));
+  	this.setState({errors, [name]: value});
     
   }
-
+  
   handleSubmit = (event) => {
     event.preventDefault();
+    const {FirstName,lastName,email,password,repeat_password} = this.state;
     if(this.state.repeat_password != this.state.password){
     	alert('enter the correct password')
     }
-    if(validateForm(this.state.errors)) {
-    	
-      console.info('Valid Form')
+    if(!FirstName || !lastName || !email || !password || !repeat_password){
+    	alert("fill")
+    }else{
+    	alert("valid form")
     }
     
-    else{
-      alert('Invalid Form')
-    }
-
   }
 
   render() {
@@ -103,7 +102,7 @@ export default class App extends React.Component {
 		                <span className='error'>{errors.FirstName}</span>}
 		            </div>
 		            <div class = "right">
-		              <input type='text' class= 'input-style' name='lastName' placeholder = 'last name' onChange={this.handleChange} noValidate />
+		              <input type='text' class= 'input-style' name='lastName' placeholder = 'last name'  onChange={this.handleChange} noValidate />
 		              
 		              {errors.lastName.length > 0 && 
 		                <span className='error'>{errors.lastName}</span>}
@@ -127,9 +126,8 @@ export default class App extends React.Component {
 		            </div>
 	            </div>
 	            <div className='submit'>
-	              <button class= 'btn-style'>Register Account</button>
+	              <button class= 'btn-style' onClick = {this.handleClick}>Register Account</button>
 	            </div>
-
 	          </form>
           </div>
         </div>
